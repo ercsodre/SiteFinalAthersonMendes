@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://transito.josenetoadvogado.com.br/sitemap.xml
