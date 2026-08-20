@@ -102,8 +102,7 @@ if(intakeForm){
     if(data.get('prazo')) lines.push(`Data final do prazo: ${data.get('prazo')}`);
     lines.push(`Resumo do caso: ${data.get('resumo')}`);
 
-    const whatsappUrl = `https://wa.me/556298446053?text=${encodeURIComponent(lines.join('\n'))}`;
-    registrarContato(`formulario_${selectedServiceInput.value}`);
+    const whatsappUrl = `https://wa.me/5562998446053?text=${encodeURIComponent(lines.join('\n'))}`;
     const whatsappLink = document.createElement('a');
     whatsappLink.href = whatsappUrl;
     whatsappLink.target = '_blank';

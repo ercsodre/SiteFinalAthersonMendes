@@ -44,7 +44,7 @@ a{color:inherit}
 .hero{
   position:relative;
   overflow:hidden;
-  background:#0b1f3a url('../img/hero-direito-transito.png') center center/cover no-repeat;
+  background:#0b1f3a url('../img/hero-atherson-20260819.png') center center/cover no-repeat;
   min-height:650px;
   display:flex;
   align-items:center;
@@ -188,6 +188,12 @@ a{color:inherit}
 .footer-brand{display:flex;flex-direction:column;align-items:flex-start}
 .footer-logo{display:block;width:112px;height:94px;margin:0 0 .75rem;object-fit:contain;object-position:left center}
 .footer-brand p{text-align:left}
+.footer-social{display:flex;align-items:center;gap:.65rem;margin-top:.35rem}
+.footer-social-column .footer-social{margin-top:.85rem}
+.footer-social a{display:grid;place-items:center;width:42px;height:42px;padding:10px;border:1px solid rgba(255,255,255,.3);border-radius:50%;background:#0b1f3a;transition:transform .2s,background .2s,border-color .2s}
+.footer-social a:hover{transform:translateY(-2px);background:#2f6da3;border-color:#fff}
+.footer-social a:focus-visible{outline:3px solid #7eb3df;outline-offset:2px}
+.footer-social img{display:block;width:100%;height:100%;filter:brightness(0) invert(1)}
 .footer a{color:var(--muted);text-decoration:none}
 .footer a:hover{color:var(--accent-light)}
 .footer ul{margin:0;padding:0;list-style:none}.footer li{margin:.35rem 0}
@@ -198,7 +204,7 @@ a{color:inherit}
 .cookie{position:fixed;left:18px;bottom:18px;max-width:420px;background:#fff;color:#0b1f3a;border-radius:16px;padding:1rem;box-shadow:0 15px 45px rgba(5,20,40,.35);z-index:90;display:none}
 .cookie button{margin-top:.7rem;border:0;background:#0b1f3a;color:#fff;border-radius:999px;padding:.6rem 1rem;cursor:pointer}
 @media(max-width:980px){
-  .hero{background:#0b1f3a url('../img/hero-direito-transito.png') left top/auto 330px no-repeat;min-height:auto;padding-top:330px}
+  .hero{background:#0b1f3a url('../img/hero-atherson-20260819.png') left top/auto 330px no-repeat;min-height:auto;padding-top:330px}
   .hero-content{padding:2rem 0 3rem;transform:none}
   .grid-3,.grid-areas,.steps,.credentials,.lawyer-grid,.contact-grid,.contact-services,.contact-form-grid,.blog-grid,.article-layout,.footer-grid{grid-template-columns:1fr}
   .grid-areas .card,.grid-areas .card:nth-last-child(-n+2){grid-column:auto}
@@ -222,6 +228,8 @@ a{color:inherit}
   .footer-brand{align-items:center;text-align:center}
   .footer-logo{object-position:center}
   .footer-brand p{text-align:center}
+  .footer-social-column{text-align:center}
+  .footer-social-column .footer-social{justify-content:center}
   .whatsapp-float{right:12px;bottom:12px;width:56px;height:56px;padding:14px}
   .cookie{left:12px;right:12px;bottom:78px;max-width:none}
 }
